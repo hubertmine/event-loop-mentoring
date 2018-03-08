@@ -16,7 +16,7 @@ function blocking(delay) {
   console.log('OUT OF THE LOOP === ', delay);
 }
 
-async function pointInPoligon() {
+async function pointInPolygon() {
   await blocking(100);
   await(delay(100));
   await blocking(200);
@@ -32,5 +32,5 @@ async function pointInPoligon() {
   stop();
 }
 
-setTimeout(pointInPoligon, 200);
+setTimeout(pointInPolygon, 200);
 
