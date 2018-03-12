@@ -26,7 +26,7 @@ async function blockProcess(duration) {
 }
 
 async function doIt() {
-  await Promise.race([
+  await Promise.all([
     test(),
     blockProcess(1000 * 2)
   ])
